@@ -27,23 +27,27 @@
             align-items: center;
             margin-top: 30px;
             padding: 8px;
-            margin-left: 8px;
+            margin-left: 50px;
+            border-radius: 20px;
+            width: 125px;
         }
+       
         .senha input[type=password] {
             display: flex;
             margin-top: 30px;
             align-items: center;
             justify-content: center;
             padding: 8px;
-            margin-left: 8px;
+            margin-left: 50px;
             border-radius: 20px;
+            width: 110px;
         }
         .pergunta{
             display: flex;
              align-items: center;
              margin-top: 30px;
              margin-bottom: 30px;
-             margin-left: 8px;
+             margin-left: 50px;
            
         }
         .jogo{
@@ -54,8 +58,28 @@
         .tipos{
             display: flex;
             margin-bottom: 30px;
-          margin-left: 8px;
+          margin-left: 50px;
         }
+        .comentario p{
+            margin-top: 15px;
+            margin-bottom: 15px;
+       
+        }
+    .extra{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+       
+    }
+    .plataforma{
+    display: flex;
+    margin-top: 30px;
+   
+    }
+    .Console{
+        margin-left: 50px;
+    }
+       
        
     
     </style>
@@ -72,7 +96,9 @@
      <form name="contato" action="grava.php" method="post"> <br />
   
      <input type="text" name="nome" value="" placeholder="Informe sua Idade"
-    maxlength="10" />
+    maxlength="20" />
+    <input type="text" name="nome" value="" placeholder="Informe seu e-mail"
+    maxlength="20" />
             </form> 
           </div>
         </body>
@@ -118,43 +144,53 @@
                 <lI> <input type="checkbox" name="teste" value="6">
                    Jogos de esporte
                     </li>
+                    <lI> <input type="checkbox" name="teste" value="6">
+                       outro
+                         </li>
                 </ol>
+                <div class="comentario">
+                <p>
+                    Se for outro qual seria? <br />
+                <textarea name="txt1" rows="7" cols="50"> </textarea></div>
                 </form>
             </div>
                 </body>
             <body>
                 </body>
+                <div class="">
                         <form >
+                            <div class="Console">
                         Joga em qual tipo de plataforma:
                         <select name="cargo">
                         <option>Console</option>
                         <option selected="selected">Computador</option>
                         <option> Nintendo </option>
                         <option>Celular</option>
-                        <option> Gerente de TI</option>
-                     </form>
-                        </select> <br /> <p>
-                        Indique qual :
+                        <option> </option>
+                    </div>
+                    </form>
+                        </select> <br /> 
+                        <div class="plataforma"><p>
+                         Indique qual plataforma de jogos você usa:
                         <select name = "so">
-                        <option> Windows 7</option>
-                        <option> Windows Vista</option>
-                        <option> Windows XP</option>
-                        <option selected="selected"> Linux </option>
+                        <option>Epic Games</option>
+                        <option> Xbox</option>
+                        <option> Steam</option>
+                        <option selected="selected">Gog </option>
                         <option> Solaris </option>
                         </select>
                         </form>
+                    </div>
                         </body>
                         <body>
                             <form>
-
-                           <p>
-                            Digite seus comentários: <br />
-                            <textarea name="txt1" rows="7" cols="50"> </textarea>
-                            <p> Deixe aqui suas críticas: <br />
+                              <div class="extra">
+                            <p> Se for por outra plataforma qual seria?: <br />
                             <textarea name="txt2" rows="5"> </textarea> <br /> <p>
-                            Digite seu endereço:
-                            <textarea name="txt3" rows="4" cols="20">
-                            Não esqueça o CEP </textarea>
+                            </div>
+                            
+                           
+                         
                             </form>
                             </body>
                         </head>
